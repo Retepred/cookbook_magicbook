@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Magic Book</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <%= yield %>
+  <div class="menu">
+  <nav>
+    <ul>
+      <li> <%= link_to('Home', root_path) %> </li>
+      <li> <%= link_to('Elements of Magic', categories_path) %> </li>
+      <li> <%= link_to('Ingredients of Magic', ingredients_path) %> </li>
+      <li> <%= link_to('Magic Recipes', recipes_path) %> </li>
+    </ul>
+  </nav>
+</div>
+</body>
+</html>

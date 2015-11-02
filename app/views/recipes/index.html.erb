@@ -1,0 +1,12 @@
+<div class="menu_show">
+<% @recipes.each do |recipe| %>
+
+  <%= link_to("Show #{recipe.name}", recipe_path(recipe) )%>
+
+  <%= button_to('Destroy Element', recipe_path(recipe), method: :delete, data: {confirm: 'Destroy Element? Are you sure?'}) %>
+
+  <%= link_to('Edit Element', edit_recipe_path(recipe)) %>
+  <br>
+  <br>
+<% end %>
+</div>

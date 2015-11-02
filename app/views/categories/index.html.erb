@@ -1,0 +1,12 @@
+<div class="menu_show">
+<% @categories.each do |category| %>
+
+  <%= link_to("Show #{category.name}", category_path(category) )%>
+
+  <%= button_to('Destroy Element', category_path(category), method: :delete, data: {confirm: 'Destroy Element? Are you sure?'}) %>
+
+  <%= link_to('Edit Element', edit_category_path(category)) %>
+  <br>
+  <br>
+<% end %>
+</div>
