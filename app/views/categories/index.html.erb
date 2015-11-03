@@ -1,7 +1,7 @@
 <div class="menu_show">
 <% @categories.each do |category| %>
 
-  <%= link_to("Show #{category.name}", category_path(category) )%>
+ <strong> <%=  category.name %> </strong>
 
   <%= button_to('Destroy Element', category_path(category), method: :delete, data: {confirm: 'Destroy Element? Are you sure?'}) %>
 
@@ -9,4 +9,5 @@
   <br>
   <br>
 <% end %>
+<%= link_to('New Element', new_category_path(@category)) %>
 </div>

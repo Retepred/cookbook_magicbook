@@ -44,6 +44,36 @@
 
  /* Grid
  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+ /*
+ * Skeleton V2.0.4
+ * Copyright 2014, Dave Gamache
+ * www.getskeleton.com
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 12/29/2014
+ */
+
+
+ /* Table of contents
+ ––––––––––––––––––––––––––––––––––––––––––––––––––
+ - Grid
+ - Base Styles
+ - Typography
+ - Links
+ - Buttons
+ - Forms
+ - Lists
+ - Code
+ - Tables
+ - Spacing
+ - Utilities
+ - Clearing
+ - Media Queries
+ */
+
+
+ /* Grid
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
  .container {
    position: relative;
    width: 100%;
@@ -141,7 +171,7 @@
    line-height: 1.6;
    font-weight: 400;
    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-   color: #222; }
+   color: white; }
 
 
  /* Typography
@@ -174,9 +204,9 @@
  /* Links
  –––––––––––––––––––––––––––––––––––––––––––––––––– */
  a {
-   color: #1EAEDB; }
+   color: white; }
  a:hover {
-   color: #0FA0CE; }
+   color: white; }
 
 
  /* Buttons
@@ -189,9 +219,9 @@
    display: inline-block;
    height: 38px;
    padding: 0 30px;
-   color: #555;
+   color: white;
    text-align: center;
-   font-size: 11px;
+   font-size: 15px;
    font-weight: 600;
    line-height: 38px;
    letter-spacing: .1rem;
@@ -304,7 +334,7 @@
  /* Lists
  –––––––––––––––––––––––––––––––––––––––––––––––––– */
  ul {
-   list-style: circle inside; }
+   list-style: none; }
  ol {
    list-style: decimal inside; }
  ol, ul {
@@ -433,3 +463,10 @@
  /* Larger than Desktop HD */
  @media (min-width: 1200px) {}
 
+/*Peter's code begins here..*/
+
+body {
+   background-image: url("https://i.ytimg.com/vi/uBjbe3UBg6U/maxresdefault.jpg");
+   background-size: 100%;
+   text-align: center;
+}

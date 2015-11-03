@@ -1,12 +1,16 @@
 <div class="menu_show">
-<% @ingredients.each do |ingredient| %>
+
+  <% @ingredients.each do |ingredient| %>
 
   <%= link_to("Show #{ingredient.name}", ingredient_path(ingredient) )%>
 
   <%= button_to('Destroy Ingredient', ingredient_path(ingredient), method: :delete, data: {confirm: 'Destroy Ingredient? Are you sure?'}) %>
 
-  <%= link_to('Edit Ingredient', edit_ingredient_path(ingredient)) %>
+  <%= link_to('Edit Ingredient', edit_ingredient_path(ingredient))%>
+
   <br>
   <br>
-<% end %>
+  <% end %>
+
+  <%= link_to('New Ingredient', new_ingredient_path(@ingredient)) %>
 </div>
