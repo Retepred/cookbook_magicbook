@@ -9,18 +9,27 @@
 <body>
 
   <%= yield %>
+
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
+
+
   <div class="menu">
-  <nav>
-    <ul>
-      <li> <%= link_to('Home', root_path) %> </li>      
-      <li> <%= link_to('Magic Recipes', recipes_path) %> </li>
-      <li> <%= link_to('Elements of Magic', categories_path) %> </li>
-      <li> <%= link_to('Ingredients of Magic', ingredients_path) %> </li>
-      <li>
-        <%=link_to 'Quantities', quantities_path %>
-      </li>
-    </ul>
-  </nav>
-</div>
+    <nav>
+      <ul>
+        <li> <%= link_to('Home', root_path) %> </li>      
+        <li> <%= link_to('Recipes', recipes_path) %> </li>
+        <li> <%= link_to('Elements', categories_path) %> </li>
+        <li> <%= link_to('Ingredients', ingredients_path) %> </li>
+        <li><%=link_to 'Quantities', quantities_path %></li>  
+      </ul>
+    </nav>
+  </div>
+
+  <audio controls>
+    <source src="magic.mp3" typw="mp3"
+  </audio>
+
 </body>
 </html>

@@ -1,6 +1,6 @@
 class QuantitiesController < ApplicationController
   before_action :set_quantity, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!
   # GET /quantities
   # GET /quantities.json
   def index
